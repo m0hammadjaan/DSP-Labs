@@ -1,0 +1,8 @@
+f = 0.5;
+t = 0:0.01:2;
+y = 0;
+for i = 1:5
+    y = y + cos(2*pi*f*t*i);
+    subplot(5,1,i), plot(t,y)
+    title("Frequency: " +num2str(f*i)+ " Time Period: " +num2str(1/(f*i)))
+end
